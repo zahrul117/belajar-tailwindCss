@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Aplikasi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="text-xl font-bold">Logo</div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#features" class="hover:underline">Fitur</a></li>
+                    <li><a href="#contact" class="hover:underline">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="h-screen bg-cover bg-center" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy6QRzztYBJiaAU06y_av3PAhh_HEwqfDY9g&s');">
+        <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+            <div class="text-center text-white px-4">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Selamat Datang di Aplikasi Kami!</h1>
+                <p class="text-lg mb-8">Solusi terbaik untuk kebutuhan digital Anda</p>
+                <button class="px-6 py-2 bg-blue-600 hover:bg-blue-700 rounded-full text-white">Coba Sekarang</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section id="features" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl text-center font-semibold mb-12">Fitur Kami</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Fitur 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptas!</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Fitur 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptas!</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Fitur 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptas!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p class="text-sm">© 2025 Aplikasi Kami. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

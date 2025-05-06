@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'midnight': '#121063',
+              }
+            }
+          }
+        }
+      </script>
+  </head>
+  <body class="bg-blue-50">
+    <header class="bg-gradient-to-r from-blue-800 to bg-red-800  text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="text-2xl font-bold tracking-wider">FC Barcelona</div>
+
+            <!-- menu -->
+             <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#" class="hover:text-yellow-300">Beranda</a>
+                <a href="#" class="hover:text-yellow-300">Pemain</a>
+                <a href="#" class="hover:text-yellow-300">Jadwal</a>
+                <a href="#" class="hover:text-yellow-300">Klasemen</a>
+             </nav>
+             <div class="hidden md:block">
+                <button class="bg-yellow-400 text-midnight px-4 py-1 rounded hover:bg-yellow-300 font-semibold">Masuk</button>
+             </div>
+        </div>
+    </header>
+
+    <!-- hero section -->
+    <section class="bg-gradient-to-r from-blue-800 to bg-red-800  text-white py-24">
+        <div class="max-w-7xl mx-auto px-24 flex flex-col md:flex-row items-center">
+          
+          <!-- Teks -->
+          <div class="md:w-1/2 mb-10 md:mb-0">
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+              Selamat Datang di FC <span class="bg-gradient-to-r from-blue-300 to bg-red-500 bg-clip-text text-transparent">Barcelona</span>
+            </h1>
+            <p class="text-lg md:text-xl mb-6 text-blue-100">
+              Dukung klub terbaik sepanjang masa! Temukan informasi seputar pemain, jadwal pertandingan, dan prestasi terkini.
+            </p>
+            <a href="#jadwal" class="bg-yellow-400 text-blue-900 px-6 py-3 rounded font-semibold hover:bg-yellow-300 transition">
+              Lihat Jadwal
+            </a>
+          </div>
+      
+          <!-- Gambar -->
+          <div class="md:w-1/2 flex justify-center">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" 
+                 alt="Logo Barcelona"
+                 class="w-2/3 md:w-1/2">
+          </div>
+          
+        </div>
+      </section>
+      
+  </body>
+</html>

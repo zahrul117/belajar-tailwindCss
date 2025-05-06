@@ -4,11 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+         tailwind.config = {
+      theme: {
+        extend: {
+          spacing:{
+            '13':'3.25rem'
+          },
+          fontFamily: {
+            lato : ['Lato']
+          }
+        }
+      }
+    }
+    </script>
 </head>
 </head>
 <body>
-    <h1 class="text">Selamat Datang</h1>
-    <h1 class="font-bold">Tai</h1>
+    <h1>Mari Belajar TailwindCSS</h1>
+
+    <section>
+        <h2>Spacing</h2>
+        <div class="m-13">margin</div>
+        <div class="p-13">Padding</div>
+    </section>
+
+    <section class="mb-10">
+        <h2>sizing</h2>
+        <div class="w-32 h-32">Kotak 1</div>
+    </section>
+
+    <section class="mb-96 font-lato max-w-3xl mx-auto">
+      <h2 class="mb-2 text-4xl font-bold">Belajar Mengenai Typography pada TailwindCSS</h2>
+      <div class="mb-4">By Zahrul 2025</div>
+        <p class="mb-4">Lorem ipsum dolor, sit amet <a href="" class="underline font-semibold">consectetur </a>adipisicing elit. Mollitia sunt vitae quod eaque quo maxime, voluptatem ratione illum saepe repudiandae cumque nobis porro, aliquid minus repellendus officiis, adipisci omnis iste quis? Fuga animi enim quis blanditiis veniam, quaerat nihil similique soluta adipisci quas, temporibus repellat possimus voluptatum at vitae dolorem.</p>
+        <blockquote class="mb-4 italic font-thin text-4xl text-center text-gray-700">"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vitae asperiores, ipsa dignissimos tenetur debitis neque accusantium quos numquam at."</blockquote>
+        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nemo aliquid minima doloremque temporibus expedita architecto ullam, quis blanditiis maiores nobis sint quisquam ex, quas commodi? Cumque cupiditate maxime illum.</p>
+    </section>
 </body>
 </html>
